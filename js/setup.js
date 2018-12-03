@@ -79,6 +79,8 @@ var onPopupEscPress = function (evt) {
 };
 
 var openPopup = function () {
+  setup.style.top = '80px';
+  setup.style.left = '50%';
   setup.classList.remove('hidden');
   document.addEventListener('keydown', onPopupEscPress);
 };
