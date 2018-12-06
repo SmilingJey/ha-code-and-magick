@@ -7,37 +7,40 @@
   var userNameInput = document.querySelector('.setup-user-name');
 
   var onPopupEscPress = function (evt) {
-    window.util.isEscEvent(evt, closePopup);
+    window.util.isEscEvent(evt, window.dialog.closePopup);
   };
 
-  var openPopup = function () {
-    setup.style.top = '80px';
-    setup.style.left = '50%';
-    setup.classList.remove('hidden');
-    document.addEventListener('keydown', onPopupEscPress);
-  };
+  window.dialog = {
+    openPopup: function () {
+      setup.style.top = '80px';
+      setup.style.left = '50%';
+      setup.classList.remove('hidden');
+      document.addEventListener('keydown', onPopupEscPress);
+      window.similarWizard.load();
+    },
 
-  var closePopup = function () {
-    if (document.activeElement !== userNameInput) {
-      setup.classList.add('hidden');
-      document.removeEventListener('keydown', onPopupEscPress);
+    closePopup: function () {
+      if (document.activeElement !== userNameInput) {
+        setup.classList.add('hidden');
+        document.removeEventListener('keydown', onPopupEscPress);
+      }
     }
   };
 
   setupOpen.addEventListener('click', function () {
-    openPopup();
+    window.dialog.openPopup();
   });
 
   setupOpen.addEventListener('keydown', function (evt) {
-    window.util.isEnterEvent(evt, openPopup);
+    window.util.isEnterEvent(evt, window.dialog.openPopup);
   });
 
   setupClose.addEventListener('click', function () {
-    closePopup();
+    window.dialog.closePopup();
   });
 
   setupClose.addEventListener('keydown', function (evt) {
-    window.util.isEnterEvent(evt, closePopup);
+    window.util.isEnterEvent(evt, window.dialog.closePopup);
   });
 
   uploadElement.addEventListener('mousedown', function (evt) {
