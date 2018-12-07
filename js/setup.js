@@ -60,5 +60,14 @@
     evt.preventDefault();
   });
 
+  var formElement = document.querySelector('.setup-wizard-form');
+  formElement.addEventListener('submit', function (evt) {
+    window.backend.save(new FormData(formElement),
+        window.dialog.closePopup,
+        window.backend.errorHandler
+    );
+    evt.preventDefault();
+  });
+
 })();
 
