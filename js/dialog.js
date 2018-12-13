@@ -16,7 +16,7 @@
       setup.style.left = '50%';
       setup.classList.remove('hidden');
       document.addEventListener('keydown', onPopupEscPress);
-      window.similarWizard.load();
+      window.similarWizard.showSimilarWizards();
     },
 
     closePopup: function () {
