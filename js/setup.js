@@ -1,6 +1,7 @@
 'use strict';
 
 (function () {
+  var userNameInput = document.querySelector('.setup-user-name');
   var setupWizardCoatColor = document.querySelector('.setup-wizard .wizard-coat');
   var setupWizardCoatColorInput = document.querySelector('input[name=coat-color]');
   var setupWizardEyeColor = document.querySelector('.setup-wizard .wizard-eyes');
@@ -12,18 +13,21 @@
     var newColor = window.GameConstants.COAT_COLORS[Math.floor(Math.random() * window.GameConstants.COAT_COLORS.length)];
     setupWizardCoatColor.style.fill = newColor;
     setupWizardCoatColorInput.value = newColor;
+    window.similarWizard.showSimilarWizards();
   });
 
   setupWizardEyeColor.addEventListener('click', function () {
     var newColor = window.util.getNextArrayItem(window.GameConstants.EYES_COLORS, setupWizardEyeColor.style.fill);
     setupWizardEyeColor.style.fill = newColor;
     setupWizardEyeColorInput.value = newColor;
+    window.similarWizard.showSimilarWizards();
   });
 
   setupWizardFireballColor.addEventListener('click', function () {
     var newColor = window.GameConstants.FIREBALL_COLORS[Math.floor(Math.random() * window.GameConstants.FIREBALL_COLORS.length)];
     setupWizardFireballColor.style.background = newColor;
     setupWizardFireballColorInput.value = newColor;
+    window.similarWizard.showSimilarWizards();
   });
 
 
@@ -68,6 +72,18 @@
     );
     evt.preventDefault();
   });
+
+
+  window.setup = {
+    getWizard: function () {
+      return {
+        name: userNameInput.value,
+        colorCoat: setupWizardCoatColorInput.value,
+        colorEyes: setupWizardEyeColorInput.value,
+        colorFireball: setupWizardFireballColorInput.value
+      };
+    }
+  };
 
 })();
 

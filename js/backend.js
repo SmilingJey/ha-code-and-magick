@@ -2,7 +2,7 @@
 
 (function () {
 
-  var LOAD_URL = ' https://js.dump.academy/code-and-magick/data';
+  var LOAD_URL = 'https://js.dump.academy/code-and-magick/data';
   var SAVE_URL = 'https://js.dump.academy/code-and-magick';
 
   window.backend = {
