@@ -1,52 +1,21 @@
-# Учебный проект «Код и Магия» [![Build status][travis-image]][travis-url]
+# Проект «Код и Магия»
 
-* Студент: [Артём Евсяков](https://up.htmlacademy.ru/javascript/16/user/637603).
-* Наставник: `Неизвестно`.
+Игра про волшебников, магию и конечно драконов.
+Работает настройка перса, перс уже умеет двигаться и недурно метать каштаны по нажатию shift.
+Планируется добавить в игру эльфов, охрану и возможность грабить караваны.
 
----
+Разработка не окончена и продолжится если проект наберет 99999 звезд X)
 
-_Не удаляйте и не обращайте внимание на файлы:_<br>
-_`.editorconfig`, `.eslintrc`, `.gitattributes`, `.gitignore`, `.travis.yml`, `package-lock.json`, `package.json`._
+https://smilingjey.github.io/ha-code-and-magick/
 
----
+# Project "Code and Magic"
 
-### Памятка
+A game about wizards, magic and of course dragons.
+The wizards setup works, the wizards already knows how to move and throws thumbs up well by pressing shift
+It is planned to add elves to the game, guards and the ability to rob caravans.
 
-#### 1. Зарегистрируйтесь на Гитхабе
+Development is not completed and will continue if the project gains 99999 stars X)
 
-Если у вас ещё нет аккаунта на [github.com](https://github.com/join), скорее зарегистрируйтесь.
+p.s. sorry for my awful google translate
 
-#### 2. Создайте форк
-
-Откройте репозиторий и нажмите кнопку «Fork» в правом верхнем углу. Репозиторий из Академии будет скопирован в ваш аккаунт.
-
-<img width="769" alt="" src="https://user-images.githubusercontent.com/10909/35275195-078bb816-0050-11e8-8708-89266d2fae5d.png">
-
-Получится вот так:
-
-<img width="769" alt="" src="https://user-images.githubusercontent.com/10909/35275196-07baf78e-0050-11e8-9275-404a4b63efb1.png">
-
-#### 3. Клонируйте репозиторий на свой компьютер
-
-Будьте внимательны: нужно клонировать свой репозиторий (форк), а не репозиторий Академии. Также обратите внимание, что клонировать репозиторий нужно через SSH, а не через HTTPS. Нажмите зелёную кнопку в правой части экрана, чтобы скопировать SSH-адрес вашего репозитория:
-
-<img width="769" alt="" src="https://user-images.githubusercontent.com/10909/35275197-07d8e79e-0050-11e8-95c1-a30a433687d8.png">
-
-Клонировать репозиторий можно так:
-
-```
-git clone SSH-адрес_вашего_форка
-```
-
-Команда клонирует репозиторий на ваш компьютер и подготовит всё необходимое для старта работы.
-
-#### 4. Начинайте обучение!
-
----
-
-<a href="https://htmlacademy.ru/intensive/javascript"><img align="left" width="50" height="50" alt="HTML Academy" src="https://up.htmlacademy.ru/static/img/intensive/javascript/logo-for-github-2.png"></a>
-
-Репозиторий создан для обучения на интенсивном онлайн‑курсе «[Профессиональный JavaScript](https://htmlacademy.ru/intensive/javascript)», уровень 1 от [HTML Academy](https://htmlacademy.ru).
-
-[travis-image]: https://travis-ci.com/htmlacademy-javascript/637603-code-and-magick.svg?branch=master
-[travis-url]: https://travis-ci.com/htmlacademy-javascript/637603-code-and-magick
+https://smilingjey.github.io/ha-code-and-magick/
